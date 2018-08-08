@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Users</title>
+</head>
+<body>
+
+	<h1> congratulations you're connected! </h1>
+
+	{% if users %}
+
+	<ol>
+	{% for user in users %}
+	
+		<li>User Info</li>
+		<ul>
+		<li> {{ user.First_name }} </li>
+	<li> {{ user.Last_name }}</li>
+	<li> {{ user.email }} </li>
+	</ul>
+	
+	
+
+	{% endfor %}
+	{% else %}
+	<p> No Data </p>
+	{% endif %}
+	</ol>
+</body>
+</html>
